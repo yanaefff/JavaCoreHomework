@@ -42,10 +42,7 @@ public class Box <T extends Fruit, Y extends Fruit>{
         int i = 0;
         for (i = 0; i < this.getListOfFruits().size(); i++) {
             newBox.getListOfFruits().add(this.getListOfFruits().get(i));
-            if (newBox.compare(this)) {
-                this.getListOfFruits().clear();
-                break;
-            }
-        }
+
+        }this.getListOfFruits().clear();
     }
 }
